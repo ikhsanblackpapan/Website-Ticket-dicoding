@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- bagian header -->
+    <header>
+      <div class="headline">
+        <h1>Event Pentas Seni <span>Tradisional</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Tentang">Tentang</a></li>
+          <li><a href="#Jadwal">Jadwal</a></li>
+          <li><a href="#Pendaftaran">Pendaftaran</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <p>Institut Seni Budaya</p>
+          <img src="assets/image/logo.png" alt="logo" />
+        </div>
+      </nav>
+    </header>
+    <!-- akhir header-->
+
+    <!-- bagian content -->
+    <main>
+      <div class="content">
+        <!-- bagian about atau card pertama -->
+        <article class="card" id="Tentang">
+          <h2>Penampilan Jaipong</h2>
+          <h3>pendahuluan</h3>
+          <p>
+            Tari Jaipong merupakan tarian tradisional yang berasal dari Jawa
+            Barat, tepatnya di wilayah Pasundan. Tari Jaipong terinspirasi dari
+            Tari Ketuk Tilu dan dikombinasikan dengan jenis tarian lain, seperti
+            pencak silat dan Tari Tayuban. Perpaduan gerakan-gerakan tersebut
+            melahirkan tarian baru yang diberi nama Tari Jaipong.
+          </p>
+          <div class="carousel-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+              <img src="assets/image/jaipong.jpg" alt="Image 1" />
+              <img src="assets/image/mayang.jpg" alt="Image 2" />
+              <img src="assets/image/pentas.jpg" alt="Image 3" />
+              <img src="assets/image/pertunjukan.png" alt="Image 3" />
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <div class="dots-container">
+              <span class="dot" onclick="showSlide(0)"></span>
+              <span class="dot" onclick="showSlide(1)"></span>
+              <span class="dot" onclick="showSlide(2)"></span>
+              <span class="dot" onclick="showSlide(3)"></span>
+            </div>
+          </div>
+          <section>
+            <h3>Tujuan</h3>
+            <p>
+              Acara ini diadakan untuk melestarikan budaya daerah sekaligus
+              memahami lebih dalam tentang tari jaipong Melalui pertunjukan dan
+              workshop tari Jaipong, peserta juga diharapkan dapat mengenal
+              lebih dalam filosofi di balik gerakan-gerakan tari ini, sehingga
+              mereka tidak hanya sekadar menikmati seni tari, tetapi juga
+              memahami nilai-nilai sejarah dan sosial yang terkandung di
+              dalamnya. Dengan demikian, acara ini berfungsi sebagai jembatan
+              antara budaya masa lalu dan masa kini, serta sebagai bentuk
+              apresiasi terhadap keanekaragaman budaya Indonesia.
+            </p>
+          </section>
+        </article>
+        <!-- akhir about atau card pertama -->
+
+        <!-- awal jadwal acara atau card ke 2 -->
+        <article class="card" id="Jadwal">
+          <h2>Jadwal Acara</h2>
+          <div class="acara">
+            <div class="jadwal-acara">
+              <p class="waktu">SEN 09.30</p>
+              <p class="hari">12</p>
+              <p class="bulan">OCT</p>
+            </div>
+            <div class="lokasi">
+              <p>
+                Loc: Jl. Peta No.209, Suka Asih, Kec. Bojongloa Kaler, Kota
+                Bandung, Jawa Barat 40231
+              </p>
+            </div>
+            <div class="beli">
+              <a href="#Pendaftaran" class="ticket-button">TIKET</a>
+            </div>
+          </div>
+          <p class="garis"></p>
+          <h3 style="text-align: center">Agenda Acara</h3>
+          <div class="agenda">
+            <div class="agenda-item kiri">
+              <p class="waktu-agenda kiri">10.00 - 11.00</p>
+              <p class="agenda-deskripsi kiri">Pembukaan Acara</p>
+            </div>
+            <div class="agenda-item kanan">
+              <p class="waktu-agenda kanan">11.00 - 12.00</p>
+              <p class="agenda-deskripsi kanan">Pertunjukan Tari Jaipong</p>
+            </div>
+            <div class="agenda-item kiri">
+              <p class="waktu-agenda kiri">12.00 - 13.00</p>
+              <p class="agenda-deskripsi kiri">Istirahat dan Makan Siang</p>
+            </div>
+            <div class="agenda-item kanan">
+              <p class="waktu-agenda kanan">14.00 - 15.00</p>
+              <p class="agenda-deskripsi kanan">
+                Workshop Tari Tradisional dan Penutupan
+              </p>
+            </div>
+          </div>
+        </article>
+        <!-- akhir card dua -->
+
+        <!-- pendaftaran atau card 3 -->
+        <article class="card" id="Pendaftaran">
+          <h2>Pendaftaran</h2>
+          <div class="card-image-container">
+            <img
+              src="assets/image/mayang.jpg"
+              alt="Tempat Pertunjukan"
+              class="card-image"
+            />
+          </div>
+          <p class="image-caption">Tempat pertunjukan</p>
+          <section class="price-info">
+            <h3>Harga Tiket</h3>
+            <p class="price">Rp100.000,00</p>
+            <div class="quantity-info">
+              <span>Promo</span>
+              <span>Jumlah Terbatas</span>
+            </div>
+            <p class="lowest-price">
+              Membeli 5 tickets akan mendapatkan potongan harga sebesar 20%
+            </p>
+          </section>
+          <button class="checkout-btn" onclick="showAlert()">
+            Go to Checkout
+          </button>
+        </article>
+      </div>
+
+      <!-- akhir card 3 -->
+      <!-- akhir content -->
+
+      <aside>
+        <!-- kumpulan aside -->
+        <article class="profile card">
+          <img
+            src="assets/image/foto-penyelenggara.jpg"
+            alt="foto penyelenggara yang lumayan ganteng rugi loh jika kalian meliat gambar ini secara load seperti ini "
+          />
+          <h2>Penyelenggara</h2>
+          <p>Nama : Muhammad Ikhsan Fadillah</p>
+          <p>
+            Visi dan Misi Saya Menghidupkan kembali keindahan seni tradisional
+            sebagai warisan budaya yang terus relevan dalam kehidupan modern.
+            Menyebarkan nilai-nilai budaya Indonesia ke kancah internasional.
+          </p>
+        </article>
+
+        <article class="profile card">
+          <img src="assets/image/pertunjukan.png" alt="Fakta menarik" />
+          <h2>Fakta Menarik Seni Jaipong</h2>
+          <p>Penari Harus Multitalenta</p>
+          <p>
+            Penari Jaipong tidak hanya harus pandai menari, tetapi juga bisa
+            mengekspresikan cerita melalui gerakan wajah (mimik) dan tubuh yang
+            harmonis dengan musik.
+          </p>
+        </article>
+        <!-- akhir kumpulan -->
+      </aside>
+    </main>
+
+    <!-- awal footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Tentang Kami</h4>
+          <ul>
+            <li>
+              <a href="#" onclick="toggleDescription(event)">About</a>
+              <p class="description" style="display: none">
+                Acara ini menjadi bagian tak terpisahkan dari usaha pelestarian
+                budaya tradisional Indonesia, menghadirkan seniman dari Sabang
+                hingga Merauke.
+              </p>
+            </li>
+            <li>
+              <a href="#" onclick="toggleDescription(event)"
+                >Syarat & Ketentuan</a
+              >
+              <p class="description" style="display: none">
+                Syarat & Ketentuan ini mengatur penggunaan situs web dan layanan
+                yang kami sediakan terkait pentas seni tradisional.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Acara dan Pertunjukan</h4>
+          <ul>
+            <li>
+              <a href="#" onclick="toggleDescription(event)">Jenis Acara</a>
+              <p class="description" style="display: none">
+                Setiap pertunjukan dirancang untuk memberikan pengalaman
+                mendalam tentang seni dan tradisi budaya Indonesia.
+              </p>
+            </li>
+            <li>
+              <a href="#" onclick="toggleDescription(event)"
+                >Tiket dan Reservasi</a
+              >
+              <p class="description" style="display: none">
+                Untuk menyaksikan keindahan seni tradisional, kami menyediakan
+                layanan pemesanan tiket yang mudah dan nyaman.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Informasi Pengunjung</h4>
+          <ul>
+            <li>
+              <a href="#" onclick="toggleDescription(event)">Support</a>
+              <p class="description" style="display: none">
+                Kami siap membantu Anda dengan kebutuhan terkait pentas seni
+                tradisional.
+              </p>
+            </li>
+            <li>
+              <a href="#" onclick="toggleDescription(event)"
+                >Aturan dan Kebijakan</a
+              >
+              <p class="description" style="display: none">
+                Untuk kenyamanan acara, kami menetapkan aturan dan kebijakan
+                yang wajib diikuti oleh pengunjung.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <hr />
+        <p>Proyek Akhir Dicoding &#169; 2019, Dicoding Academy</p>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
